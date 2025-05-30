@@ -1,6 +1,6 @@
 namespace SDL3_image;
 
-using SDL3Native;
+using SDL3;
 using System;
 
 static
