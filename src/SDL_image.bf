@@ -1822,7 +1822,7 @@ static
 	 *
 	 * \sa IMG_SaveAVIF_IO
 	 */
-	[CLink] public static extern bool IMG_SaveAVIF(SDL_Surface* surface, char8* file, int quality);
+	[CLink] public static extern bool IMG_SaveAVIF(SDL_Surface* surface, char8* file, int32 quality);
 
 	/**
 	 * Save an SDL_Surface into AVIF image data, via an SDL_IOStream.
