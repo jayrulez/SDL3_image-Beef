@@ -1,0 +1,26 @@
+FileVersion = 1
+Dependencies = {corlib = "*", SDL3Native = "*"}
+
+[Project]
+Name = "SDL3_image"
+StartupObject = "SDL3_image.Program"
+
+[Configs.Debug.Win32]
+LibPaths = ["$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x86/SDL3_image.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x86/*.dll\")"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x86/optional/*.*\")"]
+
+[Configs.Debug.Win64]
+LibPaths = ["$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x64/SDL3_image.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x64/*.dll\")"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x64/optional/*.*\")"]
+
+[Configs.Release.Win32]
+LibPaths = ["$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x86/SDL3_image.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x86/*.dll\")"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x86/optional/*.*\")"]
+
+[Configs.Release.Win64]
+LibPaths = ["$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x64/SDL3_image.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x64/*.dll\")"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x64/optional/*.*\")"]
