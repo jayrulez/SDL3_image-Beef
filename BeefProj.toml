@@ -8,16 +8,16 @@ StartupObject = "SDL3_image.Program"
 
 [Configs.Debug.Win32]
 LibPaths = ["$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x86/SDL3_image.lib"]
-PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x86/*.dll\")"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x86/*.dll\")", "CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x86/*.pdb\")", "CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x86/optional/*.dll\")", "CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x86/optional/*.txt\")"]
 
 [Configs.Debug.Win64]
 LibPaths = ["$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x64/SDL3_image.lib"]
-PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x64/*.dll\")"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x64/*.dll\")",  "CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x64/*.pdb\")", "CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x64/optional/*.dll\")", "CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x64/optional/*.txt\")"]
 
 [Configs.Release.Win32]
 LibPaths = ["$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x86/SDL3_image.lib"]
-PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x86/*.dll\")"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x86/*.dll\")", "CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x86/optional/*.dll\")", "CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x86/optional/*.txt\")"]
 
 [Configs.Release.Win64]
 LibPaths = ["$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x64/SDL3_image.lib"]
-PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x64/*.dll\")"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x64/*.dll\")", "CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x64/optional/*.dll\")", "CopyToDependents(\"$(ProjectDir)/dist/SDL3_image-3.2.4/lib/x64/optional/*.txt\")"]
